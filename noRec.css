@@ -1,0 +1,19 @@
+ytd-watch-flexy #secondary, ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+ytd-watch-flexy #columns {
+    grid-template-columns: minmax(0, 1fr) !important;
+    column-gap: 0px !important;
+}
+
+#primary {
+    max-width: none !important;
+    width: 100% !important;
+    flex: 1 1 auto !important;
+}
+
+ytd-watch-flexy[theater] #columns {
+    grid-template-columns: minmax(0, 1fr) !important;
+
+}
