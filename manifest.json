@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "No Rec",
+    "version": "1.0",
+
+    "description": "Removes 'Recommended' section from YouTube homepage.",
+
+    "content_scripts" : [
+        {
+            "matches": ["*://www.youtube.com/watch*"],
+            "js": ["noRec.js"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    }
+}
